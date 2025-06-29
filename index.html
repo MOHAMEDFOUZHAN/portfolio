@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fouzhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Fouzhan</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" download>Resume ⬇️</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+<header id="home">
+  <div class="hero-content">
+    <h1>Hey, I'm <span>Fouzhan</span></h1>
+    <h3>Full-Stack Developer • AI Explorer</h3>
+    <p>I create modern websites, AI tools, and smart systems that solve real-world problems.</p>
+    <img src="assets/profile.jpg" alt="Fouzhan" class="profile-pic">
+
+
+
+<div class="social-icons">
+  <a href="https://github.com/" target="_blank" aria-label="GitHub">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/fouzhan-m-011757320/" target="_blank" aria-label="LinkedIn">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" />
+  </a>
+  <a href="https://www.instagram.com/mohamed_fouzhan?igsh=OW51a3BleG14eG5v" target="_blank" aria-label="Instagram">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+  </a>
+</div>
+</div>
+</header>
+
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate full-stack developer exploring AI, robotics, and smart solutions. I love working on projects that improve lives through tech.</p>
+  </section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill-bar">
+    <p>HTML</p>
+    <div class="progress"><div class="progress-fill" style="width: 95%;"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>CSS</p>
+    <div class="progress"><div class="progress-fill" style="width: 90%;"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>JavaScript</p>
+    <div class="progress"><div class="progress-fill" style="width: 80%;"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>Python</p>
+    <div class="progress"><div class="progress-fill" style="width: 85%;"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>Flask</p>
+    <div class="progress"><div class="progress-fill" style="width: 75%;"></div></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>AI/ML</p>
+    <div class="progress"><div class="progress-fill" style="width: 70%;"></div></div>
+  </div>
+</section>
+
+
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Smart Irrigation System</h3>
+      <p>AI + IoT based farming project.</p>
+    </div>
+    <div class="project-card">
+      <h3>Hospital Website</h3>
+      <p>Responsive design using HTML/CSS/JS.</p>
+    </div>
+    <div class="project-card">
+      <h3>AI Chatbot</h3>
+      <p>Smart assistant built with Python and NLP.</p>
+    </div>
+    <div class="project-card">
+      <h3>Portfolio Site</h3>
+      <p>Built using HTML, CSS, and animations.</p>
+    </div>
+    <div class="project-card">
+      <h3>Food Waste App</h3>
+      <p>Connects restaurants to NGOs to reduce food waste.</p>
+    </div>
+    <div class="project-card">
+      <h3>Animal Detector</h3>
+      <p>AI-based security for farmlands using sensors.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let's build something cool!</p>
+    <a href="mailto:mfouzhan@example.com?subject=Let's%20Work%20Together&body=Hey%20Fouzhan,%20I%20saw%20your%20portfolio%20and..." class="btn">Email Me</a>
+
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+
+<footer>
+  <p>&copy; 2025 Fouzhan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

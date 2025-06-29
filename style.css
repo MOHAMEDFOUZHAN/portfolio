@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1E1E1E;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  color: #00FF88;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00FF88;
+}
+
+.burger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #00FF88;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #121212;
+}
+
+header span {
+  color: #00FF88;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #00FF88;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  background-color: #1E1E1E;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Project Cards */
+.project-card {
+  background: #00FF88;
+  color: #121212;
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #121212;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.hero-content h1 span {
+  color: #00FF88;
+}
+
+.hero-content h3 {
+  color: #cccccc;
+  font-weight: 400;
+}
+
+.hero-content p {
+  color: #dddddd;
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn-outline {
+  display: inline-block;
+  color: #00FF88;
+  border: 2px solid #00FF88;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+  background: #00FF88;
+  color: #121212;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00FF88;
+}
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00FF88;
+  transform: scale(1.2);
+}
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%); /* makes it white */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(98%) saturate(722%) hue-rotate(99deg) brightness(96%) contrast(93%);
+  transform: scale(1.2);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1E1E1E;
+  color: #777;
+  margin-top: 40px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #59ffb2b9;
+  margin: 20px auto;
+  display: block;
+  object-fit: cover;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #6d6d6d;
+  }
+  to {
+    box-shadow: 0 0 23px #6d6d6d, 0 0 40px #6d6d6d;
+  }
+}
+
+#skills {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+#skills h2 {
+  color: #00FF88;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skill-bar {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.skill-bar p {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.progress {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00FF88;
+  width: 0;
+  animation: fillAnim 2s forwards;
+  border-radius: 20px;
+}
+
+@keyframes fillAnim {
+  from { width: 0; }
+  to { width: 100%; } /* overridden inline per skill */
+}
